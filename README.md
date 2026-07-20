@@ -1,10 +1,10 @@
 # Jay Deaton
 
-Developer and maker with a weakness for cross-platform. I use React Native and Electron because I'd rather build something once and have it run everywhere then fill the gaps with Node.js APIs, Vue.js web tools, Swift packages, and whatever the Arduino or 3D printer demands next.
+Developer and maker with a weakness for cross-platform. I use React Native and Electron because I'd rather build something once and have it run everywhere, then fill the gaps with Node.js APIs, Vue.js web tools, Swift packages, and whatever the Arduino or 3D printer demands next.
 
 Co-owner at [Infinite Token](https://github.com/infinitetoken), where most of my professional work lives. My open source components, CLI tools, and side projects live here.
 
-Available for freelance work out of Lincoln, NE.
+Open to senior full-stack roles (remote) and freelance work — based in Lincoln, NE.
 
 ---
 
@@ -22,20 +22,13 @@ Available for freelance work out of Lincoln, NE.
 
 ## Stack
 
-- **AI / LLM** — OpenAI, LLM integration
+- **AI / LLM** — OpenAI, Anthropic (Claude), LLM integration, AI-assisted development
 - **Auth & Security** — JWT, OAuth, end-to-end encryption
-- **Background Processing** — workers, cron jobs
-- **CI/CD** — GitHub Actions, npm publishing
-- **Data** — MongoDB, PostgreSQL, MySQL, SQLite, AsyncStorage, SecureStore, cookies
-- **Deployment** — AWS, Heroku, Vercel
-- **File Storage** — AWS S3, Vercel Blob, local — images and documents
-- **Maps & Location** — geolocation, mapping
-- **Offline-First** — SQLite sync, local-first architecture, incremental sync
+- **Data** — MongoDB, PostgreSQL, MySQL, SQLite, offline-first / local-first sync
+- **Deployment & CI/CD** — AWS, Heroku, Vercel, GitHub Actions, npm publishing
 - **Payments** — Stripe, POS systems
-- **Protocols** — SSH, VNC, SMB, FTP
-- **Push Notifications** — mobile and desktop
-- **Reporting & Analytics** — data aggregation, charts, and tables
-- **State Management** — Redux, React Context
+- **Files & Media** — AWS S3, Vercel Blob, images and documents
+- **App Infrastructure** — push notifications, background workers, cron, Redux / React Context
 - **Testing** — unit, integration, and end-to-end
 
 ---
@@ -61,18 +54,21 @@ Available for freelance work out of Lincoln, NE.
 
 | Project | Description |
 |---------|-------------|
+| [Cosmetic](https://github.com/jayrdeaton/Cosmetic) | Chainable ANSI color and style library for Node.js terminals |
 | [GraPDF](https://github.com/jayrdeaton/GraPDF) | CLI and ESM/CJS package — scrape PDFs from a webpage and merge them into a single booklet |
-| [SnaPDF](https://github.com/jayrdeaton/SnaPDF) | CLI and ESM/CJS package — snap ChatGPT conversations to searchable PDF or plain text |
+| [Pixelated](https://www.npmjs.com/package/pixelated) | CLI and library on npm — pixelate images with 40+ retro palettes, 20+ block shapes, and dithering |
+| [SnaPDF](https://github.com/jayrdeaton/SnaPDF) | CLI and ESM/CJS package — snap ChatGPT and Claude conversations to searchable PDF or plain text |
 | [TermKit](https://github.com/jayrdeaton/TermKit) | Fluent CLI framework for Node.js — nested subcommands, middleware, type coercion |
 
 **Web**
 
-| Project | Description |
-|---------|-------------|
-| [GraPDF-Web](https://github.com/jayrdeaton/GraPDF-Web) | Web UI for GraPDF |
-| [Pixelated-Web](https://github.com/jayrdeaton/Pixelated-Web) | Browser-based image pixelation tool |
-| [SnaPDF-Web](https://github.com/jayrdeaton/SnaPDF-Web) | Web UI for SnaPDF |
-| [TrimBox](https://github.com/jayrdeaton/TrimBox) | Scans your Gmail and surfaces unsubscribe links |
+| Project | Live | Description |
+|---------|------|-------------|
+| [GraPDF-Web](https://github.com/jayrdeaton/GraPDF-Web) | [grapdf.infinitetoken.com](https://grapdf.infinitetoken.com) | Web UI for GraPDF |
+| [MapFolio](https://github.com/jayrdeaton/MapFolio) | [mapfolio.infinitetoken.com](https://mapfolio.infinitetoken.com) | Interactive map builder — pins, routes, captions, print-to-PDF, and share links that encode the whole map in the URL |
+| [Pixelated-Web](https://github.com/jayrdeaton/Pixelated-Web) | [pixelated.infinitetoken.com](https://pixelated.infinitetoken.com) | Browser-based image pixelation tool |
+| [SnaPDF-Web](https://github.com/jayrdeaton/SnaPDF-Web) | [snapdf.infinitetoken.com](https://snapdf.infinitetoken.com) | Web UI for SnaPDF |
+| [TrimBox](https://github.com/jayrdeaton/TrimBox) | [trimbox.infinitetoken.com](https://trimbox.infinitetoken.com) | Gmail inbox cleaner — scans up to 10,000 messages, surfaces bulk senders, one-click unsubscribe and bulk archive/trash |
 
 ---
 
