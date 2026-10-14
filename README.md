@@ -2,7 +2,7 @@
 
 **Senior full-stack engineer: TypeScript, React, React Native / Expo, Node.js.** 10+ years building and running the software behind a production buy-sell-trade commerce business.
 
-**Open to senior full-stack roles (remote) and freelance work.** Based in Lincoln, NE.
+**Open to senior full-stack roles (remote, hybrid, or on-site) and freelance work.** Based in Lincoln, NE.
 
 [LinkedIn](https://linkedin.com/in/jay-deaton) · [jayrdeaton@gmail.com](mailto:jayrdeaton@gmail.com) · [npm (58 packages)](https://www.npmjs.com/~jayrdeaton) · [infinitetoken.com](https://www.infinitetoken.com)
 
@@ -10,7 +10,7 @@
 
 ## Professional work
 
-Full-stack developer and co-owner at [Infinite Token](https://github.com/infinitetoken) since 2016. That code is private, so here's the summary:
+Full-stack engineer and co-founder at [Infinite Token](https://github.com/infinitetoken) since 2016. That code is private, so here's the summary:
 
 - Core engineer on a 3-6 person team: 6 internal apps (React, React Native, Electron), a central Node/Express API, and databases used by 25 staff and tens of thousands of customers
 - Integrated Shopify, eBay, Google, AWS, and POS hardware into one system
