@@ -1,6 +1,6 @@
 # Jay Deaton
 
-**Full-stack engineer: TypeScript, React, React Native / Expo, Node.js.** 10+ years building and running the software behind a production buy-sell-trade commerce business.
+**Senior full-stack engineer: TypeScript, React, React Native / Expo, Node.js.** 10+ years building and running the software behind a production buy-sell-trade commerce business.
 
 **Open to senior full-stack roles (remote) and freelance work.** Based in Lincoln, NE.
 
@@ -28,9 +28,10 @@ Logging platform with an HTTP API, a WebSocket server for live log streaming, ba
 ### `@tastic`: React Native game engine + games
 Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, cards, profiles, achievements, split-screen pass-and-play) that power my Expo games. App Store and Google Play release in progress.
 - [React-Native-Game-Core](https://github.com/jayrdeaton/React-Native-Game-Core) (`@tastic/core`): frame-rate-independent game loop, vector math, orientation handling, background pause
-- [Solitaire](https://github.com/jayrdeaton/Solitaire): ad-free, offline suite of 11 solitaire games for iOS and web on a shared TypeScript card engine
+- [Solitaire](https://github.com/jayrdeaton/Solitaire): ad-free, offline suite of 11 solitaire games for iOS, Android, and web on a shared TypeScript card engine
+- [AirHockey](https://github.com/jayrdeaton/AirHockey): real-time air hockey with sub-stepped puck physics, a CPU that predicts the puck's path, and two-player on one device, face to face or side by side
 - [BoxHockey](https://github.com/jayrdeaton/BoxHockey): turn-based tabletop hockey with flick, slingshot, and push shots; reaction-race face-offs; and a CPU that picks shots by simulating them through the physics engine
-- [LightCycles](https://github.com/jayrdeaton/LightCycles) · [Snake](https://github.com/jayrdeaton/Snake) · [Hangman](https://github.com/jayrdeaton/Hangman)
+- [LightCycles](https://github.com/jayrdeaton/LightCycles) · [Snake](https://github.com/jayrdeaton/Snake) · [Hangman](https://github.com/jayrdeaton/Hangman) · [Swirlio](https://github.com/jayrdeaton/Swirlio)
 
 ### Live web tools
 | Project | Live | Description |
@@ -49,6 +50,7 @@ Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, car
 
 | Package | Description |
 |---------|-------------|
+| [`@rific/updater`](https://github.com/jayrdeaton/Expo-Updater) | OTA update hook for Expo plus the build and update release CLI |
 | [`@rific/sync`](https://github.com/jayrdeaton/Expo-Sync) | SQLite sync engine for Expo: schema management, upserts, deletions, cursor tracking |
 | [`@rific/scanner`](https://github.com/jayrdeaton/React-Native-Scanner) | Camera barcode scanner with customizable overlays |
 | [`@rific/auto-paper`](https://github.com/jayrdeaton/React-Native-Auto-Paper) | Adaptive triadic theming for react-native-paper |
@@ -58,7 +60,27 @@ Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, car
 | [`@rific/resizable-input`](https://github.com/jayrdeaton/React-Native-Resizable-Input) | Resizable multiline input |
 | [`@rific/focus-chain`](https://github.com/jayrdeaton/React-Focus-Chain) | Auto-incrementing focus chain hook for form inputs |
 | [`@rific/feedback-press`](https://github.com/jayrdeaton/React-Native-Feedback-Press) | Haptic pressables |
+| [`@rific/scroll-view`](https://github.com/jayrdeaton/React-Native-Scroll-View) | ScrollView, FlatList, and SectionList with blurred floating headers and pull-to-search |
+| [`@rific/drawer`](https://github.com/jayrdeaton/React-Native-Drawer) | Spring-animated drawers and sheets that slide in from any screen edge |
+| [`@rific/splash-gate`](https://github.com/jayrdeaton/Expo-Splash-Gate) | Holds the splash screen until named async conditions are ready |
+| [`@rific/core`](https://github.com/jayrdeaton/React-Native-Core) | Settings Context and Redux slice factories shared by the other packages |
 | [Expo-Starter](https://github.com/jayrdeaton/Expo-Starter) | Production-ready Expo starter with Redux, Paper theming, OTA updates, and `@rific` pre-wired |
+
+**`@tastic`: React Native game engine**
+
+| Package | Description |
+|---------|-------------|
+| [`@tastic/core`](https://github.com/jayrdeaton/React-Native-Game-Core) | Vec2 math, frame-clamped game loop, orientation handling, background pause |
+| [`@tastic/physics`](https://github.com/jayrdeaton/React-Native-Game-Physics) | 2D arcade physics: circle and rect collisions, bounces, friction, gravity wells, springs |
+| [`@tastic/input`](https://github.com/jayrdeaton/React-Native-Game-Input) | Worklet-safe input: swipe and keyboard direction, drag aiming, flick velocity |
+| [`@tastic/hud`](https://github.com/jayrdeaton/React-Native-Hud) | Non-modal UI kit for local multiplayer: popovers, pickers, gauges, and dialogs per player zone |
+| [`@tastic/split-screen`](https://github.com/jayrdeaton/React-Native-Split-Screen) | Face-to-face or side-by-side two-player layouts based on how the device is held |
+| [`@tastic/grid`](https://github.com/jayrdeaton/React-Native-Game-Grid) | Grid math for tile games: bounds, cell/pixel conversion, adjacency, BFS reachability |
+| [`@tastic/sprites`](https://github.com/jayrdeaton/React-Native-Sprites) | Shared Skia and SVG effects: fireworks, gravity wells, pucks, rink markings |
+| [`@tastic/cards`](https://github.com/jayrdeaton/React-Native-Cards) | Playing-card rendering: faces, backs, court figures, suit pips |
+| [`@tastic/profile`](https://github.com/jayrdeaton/React-Native-Game-Profile) | Per-seat player profiles with picker and roster screens |
+| [`@tastic/achievements`](https://github.com/jayrdeaton/React-Native-Game-Achievements) | Headless achievement and stats engine: tiers, per-profile unlocks, streaks |
+| [`@tastic/edge-guard`](https://github.com/jayrdeaton/React-Native-Edge-Guard) | Config plugin and hook that keep iOS edge swipes from firing over game controls |
 
 **Node.js / CLI**
 
