@@ -4,7 +4,7 @@
 
 **Open to senior full-stack roles (remote, hybrid, or on-site) and freelance work.** Based in Lincoln, NE.
 
-[LinkedIn](https://linkedin.com/in/jay-deaton) · [jayrdeaton@gmail.com](mailto:jayrdeaton@gmail.com) · [npm (58 packages)](https://www.npmjs.com/~jayrdeaton) · [infinitetoken.com](https://www.infinitetoken.com)
+[jaydeaton.com](https://jaydeaton.com) · [LinkedIn](https://linkedin.com/in/jay-deaton) · [jayrdeaton@gmail.com](mailto:jayrdeaton@gmail.com) · [npm (58 packages)](https://www.npmjs.com/~jayrdeaton) · [infinitetoken.com](https://www.infinitetoken.com)
 
 ---
 
@@ -12,7 +12,7 @@
 
 Full-stack engineer and co-founder at [Infinite Token](https://github.com/infinitetoken) since 2016. That code is private, so here's the summary:
 
-- Core engineer on a 3-6 person team: 6 internal apps (React, React Native, Electron), a central Node/Express API, and databases used by 25 staff and tens of thousands of customers
+- Core engineer on a 3-6 person team: 6 internal apps (React, React Native, Electron), a central Node/Express API, and databases serving 3 retail locations, 25 staff, and tens of thousands of customers
 - Integrated Shopify, eBay, Google, AWS, and POS hardware into one system
 - Migrated hundreds of thousands of records across databases with zero data loss
 - Led the move to TypeScript, plus Jest testing and org-wide linting standards
