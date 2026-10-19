@@ -4,7 +4,7 @@
 
 **Open to senior full-stack roles (remote, hybrid, or on-site) and freelance work.** Based in Lincoln, NE.
 
-[jaydeaton.com](https://jaydeaton.com) · [LinkedIn](https://linkedin.com/in/jay-deaton) · [jayrdeaton@gmail.com](mailto:jayrdeaton@gmail.com) · [npm (58 packages)](https://www.npmjs.com/~jayrdeaton) · [infinitetoken.com](https://www.infinitetoken.com)
+[jaydeaton.com](https://jaydeaton.com) · [LinkedIn](https://linkedin.com/in/jay-deaton) · [jayrdeaton@gmail.com](mailto:jayrdeaton@gmail.com) · [npm (55+ packages)](https://www.npmjs.com/~jayrdeaton) · [infinitetoken.com](https://www.infinitetoken.com)
 
 ---
 
@@ -62,6 +62,7 @@ Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, car
 | [`@rific/feedback-press`](https://github.com/jayrdeaton/React-Native-Feedback-Press) | Haptic pressables |
 | [`@rific/scroll-view`](https://github.com/jayrdeaton/React-Native-Scroll-View) | ScrollView, FlatList, and SectionList with blurred floating headers and pull-to-search |
 | [`@rific/drawer`](https://github.com/jayrdeaton/React-Native-Drawer) | Spring-animated drawers and sheets that slide in from any screen edge |
+| [`@rific/gestures`](https://github.com/jayrdeaton/React-Native-Gestures) | Swipe-to-dismiss with flicks, and pinch-to-zoom about the fingers, measured in the view's own coordinates |
 | [`@rific/splash-gate`](https://github.com/jayrdeaton/Expo-Splash-Gate) | Holds the splash screen until named async conditions are ready |
 | [`@rific/core`](https://github.com/jayrdeaton/React-Native-Core) | Settings Context and Redux slice factories shared by the other packages |
 | [Expo-Starter](https://github.com/jayrdeaton/Expo-Starter) | Production-ready Expo starter with Redux, Paper theming, OTA updates, and `@rific` pre-wired |
