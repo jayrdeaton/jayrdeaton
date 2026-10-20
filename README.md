@@ -16,22 +16,28 @@ Full-stack engineer and co-founder at [Infinite Token](https://github.com/infini
 - Integrated Shopify, eBay, Google, AWS, and POS hardware into one system
 - Migrated hundreds of thousands of records across databases with zero data loss
 - Led the move to TypeScript, plus Jest testing and org-wide linting standards
-- Currently building an AI product-data system on the Anthropic API and Supabase
+- Currently building [MediaEncyclopedia](https://mediaencyclopedia.com), a graded collectible-media storefront on Next.js and Supabase, with AI product enrichment on Gemini and Claude
 
 ---
 
 ## Featured
 
-### Lumber: end-to-end encrypted cloud logging *(private)*
-Logging platform with an HTTP API, a WebSocket server for live log streaming, background workers, and MongoDB storage. Includes mobile, desktop, and web clients and SDKs for Node, Python, and Swift. Logs are encrypted before they leave the device, and all decryption and search happen on the client, so the server never sees plaintext. Happy to walk through the architecture.
+### Private projects
+The code is private, but I'm happy to walk through the architecture.
+- **[MediaEncyclopedia](https://mediaencyclopedia.com):** storefront for collectible Blu-ray, 4K, DVD, and games, with every unit graded and photographed. Next.js and Supabase, an in-house grading and cataloging tool, eBay-based pricing, AI enrichment routed between Gemini and Claude, and Stripe checkout
+- **MediaEncyclopedia-Utility:** MediaEncyclopedia's React Native / Expo companion app: staff turn products into trackable units, move and audit stock across containers, photograph units for the storefront, and print labels on Zebra Bluetooth printers through native modules
+- **Lumber:** end-to-end encrypted cloud logging. An HTTP API, a WebSocket server for live log streaming, background workers, and PostgreSQL on Supabase, plus a mobile and web app and SDKs for Node, Python, and Swift. Logs are encrypted before they leave the device, and all decryption and search happen on the client, so the server never sees plaintext
+- **CashierFu:** point-of-sale for small retailers: a Nuxt web app, native iOS and macOS apps in Swift, a WebSocket server, and an Express API with sales and inventory analytics. Each shop connects its own Stripe account to take cards on Stripe Terminal readers
+- **CashierFu-Utility:** CashierFu's companion app for shop staff, the same React Native codebase as MediaEncyclopedia-Utility built against CashierFu's own API from its own EAS profile
 
 ### `@tastic`: React Native game engine + games
-Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, cards, profiles, achievements, split-screen pass-and-play) that power my Expo games. App Store and Google Play release in progress.
+Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, cards, profiles, achievements, split-screen pass-and-play) that power my Expo games. App Store and Google Play release in progress; play the web versions at [games.infinitetoken.com](https://games.infinitetoken.com).
 - [React-Native-Game-Core](https://github.com/jayrdeaton/React-Native-Game-Core) (`@tastic/core`): frame-rate-independent game loop, vector math, orientation handling, background pause
-- [Solitaire](https://github.com/jayrdeaton/Solitaire): ad-free, offline suite of 11 solitaire games for iOS, Android, and web on a shared TypeScript card engine
-- [AirHockey](https://github.com/jayrdeaton/AirHockey): real-time air hockey with sub-stepped puck physics, a CPU that predicts the puck's path, and two-player on one device, face to face or side by side
-- [BoxHockey](https://github.com/jayrdeaton/BoxHockey): turn-based tabletop hockey with flick, slingshot, and push shots; reaction-race face-offs; and a CPU that picks shots by simulating them through the physics engine
-- [LightCycles](https://github.com/jayrdeaton/LightCycles) · [Snake](https://github.com/jayrdeaton/Snake) · [Hangman](https://github.com/jayrdeaton/Hangman) · [Swirlio](https://github.com/jayrdeaton/Swirlio)
+- [BoxHockey](https://github.com/jayrdeaton/BoxHockey) ([play](https://games.infinitetoken.com/boxhockey/)): turn-based tabletop hockey with flick, slingshot, and push shots; reaction-race face-offs; and a CPU that picks shots by simulating them through the physics engine
+- [Solitaire](https://github.com/jayrdeaton/Solitaire) ([play](https://games.infinitetoken.com/solitaire/)): ad-free, offline suite of 11 solitaire games for iOS, Android, and web on a shared TypeScript card engine
+- [LightCycles](https://github.com/jayrdeaton/LightCycles) ([play](https://games.infinitetoken.com/lightcycles/)) · [Snake](https://github.com/jayrdeaton/Snake) ([play](https://games.infinitetoken.com/snake/)) · [Hangman](https://github.com/jayrdeaton/Hangman) ([play](https://games.infinitetoken.com/hangman/))
+- [Swirlio](https://github.com/jayrdeaton/Swirlio) ([play](https://swirlio.infinitetoken.com)): kaleidoscope toy drawn in Skia with up to 12 mirrored copies, 150 colliding beads simulated on the UI thread, and a mic-driven audio-reactive mode
+- In development: [AirHockey](https://github.com/jayrdeaton/AirHockey), real-time air hockey with sub-stepped puck physics, a CPU that predicts the puck's path, and two-player on one device, face to face or side by side · [Pong](https://github.com/jayrdeaton/Pong)
 
 ### Live web tools
 | Project | Live | Description |
@@ -109,4 +115,4 @@ Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, car
 
 ## Off the clock
 
-Arduino projects, [Fusion 360 macros](https://github.com/jayrdeaton/Fusion360Macros), 3D printing, and 6502 assembly games ([Snake](https://github.com/jayrdeaton/6502-Snake), [Pong](https://github.com/jayrdeaton/6502-Pong), [LightCycles](https://github.com/jayrdeaton/6502-LightCycles)).
+Arduino projects, [Fusion 360 macros](https://github.com/jayrdeaton/Fusion360Macros), 3D printing, and 6502 assembly games ([Snake](https://github.com/jayrdeaton/6502-Snake), [Pong](https://github.com/jayrdeaton/6502-Pong), [LightCycles](https://github.com/jayrdeaton/6502-LightCycles)), playable in the browser at [games.infinitetoken.com](https://games.infinitetoken.com/#6502).
