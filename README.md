@@ -33,10 +33,10 @@ The code is private, but I'm happy to walk through the architecture.
 ### `@tastic`: React Native game engine + games
 Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, cards, profiles, achievements, split-screen pass-and-play) that power my Expo games. App Store and Google Play release in progress; play the web versions at [games.infinitetoken.com](https://games.infinitetoken.com).
 - [React-Native-Game-Core](https://github.com/jayrdeaton/React-Native-Game-Core) (`@tastic/core`): frame-rate-independent game loop, vector math, orientation handling, background pause
-- [BoxHockey](https://github.com/jayrdeaton/BoxHockey) ([play](https://games.infinitetoken.com/boxhockey/)): turn-based tabletop hockey with flick, slingshot, and push shots; reaction-race face-offs; and a CPU that picks shots by simulating them through the physics engine
+- [BoxHockey](https://github.com/jayrdeaton/BoxHockey) ([play](https://games.infinitetoken.com/boxhockey/), [App Store](https://apps.apple.com/app/id6824717751)): turn-based tabletop hockey with flick, slingshot, and push shots; reaction-race face-offs; and a CPU that picks shots by simulating them through the physics engine
 - [Solitaire](https://github.com/jayrdeaton/Solitaire) ([play](https://games.infinitetoken.com/solitaire/)): ad-free, offline suite of 11 solitaire games for iOS, Android, and web on a shared TypeScript card engine
 - [LightCycles](https://github.com/jayrdeaton/LightCycles) ([play](https://games.infinitetoken.com/lightcycles/)) · [Snake](https://github.com/jayrdeaton/Snake) ([play](https://games.infinitetoken.com/snake/)) · [Hangman](https://github.com/jayrdeaton/Hangman) ([play](https://games.infinitetoken.com/hangman/))
-- [Swirlio](https://github.com/jayrdeaton/Swirlio) ([play](https://swirlio.infinitetoken.com)): kaleidoscope toy drawn in Skia with up to 12 mirrored copies, 150 colliding beads simulated on the UI thread, and a mic-driven audio-reactive mode
+- [Swirlio](https://github.com/jayrdeaton/Swirlio) ([play](https://swirlio.infinitetoken.com), [App Store](https://apps.apple.com/app/id6824430243)): kaleidoscope toy drawn in Skia with up to 12 mirrored copies, 150 colliding beads simulated on the UI thread, and a mic-driven audio-reactive mode
 - In development: [AirHockey](https://github.com/jayrdeaton/AirHockey), real-time air hockey with sub-stepped puck physics, a CPU that predicts the puck's path, and two-player on one device, face to face or side by side · [Pong](https://github.com/jayrdeaton/Pong)
 
 ### Live web tools
