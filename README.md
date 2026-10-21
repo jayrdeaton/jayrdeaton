@@ -31,7 +31,7 @@ The code is private, but I'm happy to walk through the architecture.
 - **CashierFu-Utility:** CashierFu's companion app for shop staff, the same React Native codebase as MediaEncyclopedia-Utility built against CashierFu's own API from its own EAS profile
 
 ### `@tastic`: React Native game engine + games
-Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, cards, profiles, achievements, split-screen pass-and-play) that power my Expo games. App Store and Google Play release in progress; play the web versions at [games.infinitetoken.com](https://games.infinitetoken.com).
+Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, cards, profiles, achievements, split-screen pass-and-play) that power my Expo games. BoxHockey and Swirlio are the first on the App Store, with more games and Google Play on the way. Play the web versions at [games.infinitetoken.com](https://games.infinitetoken.com).
 - [React-Native-Game-Core](https://github.com/jayrdeaton/React-Native-Game-Core) (`@tastic/core`): frame-rate-independent game loop, vector math, orientation handling, background pause
 - [BoxHockey](https://github.com/jayrdeaton/BoxHockey) ([play](https://games.infinitetoken.com/boxhockey/), [App Store](https://apps.apple.com/app/id6824717751)): turn-based tabletop hockey with flick, slingshot, and push shots; reaction-race face-offs; and a CPU that picks shots by simulating them through the physics engine
 - [Solitaire](https://github.com/jayrdeaton/Solitaire) ([play](https://games.infinitetoken.com/solitaire/)): ad-free, offline suite of 11 solitaire games for iOS, Android, and web on a shared TypeScript card engine
