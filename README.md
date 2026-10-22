@@ -115,4 +115,4 @@ Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, car
 
 ## Off the clock
 
-Arduino projects, [Fusion 360 macros](https://github.com/jayrdeaton/Fusion360Macros), 3D printing, and 6502 assembly games ([Snake](https://github.com/jayrdeaton/6502-Snake), [Pong](https://github.com/jayrdeaton/6502-Pong), [LightCycles](https://github.com/jayrdeaton/6502-LightCycles)), playable in the browser at [games.infinitetoken.com](https://games.infinitetoken.com/#6502).
+Arduino projects, [Fusion 360 macros](https://github.com/jayrdeaton/Fusion360Macros), 3D printing, and 6502 assembly games ([Snake](https://github.com/jayrdeaton/6502-Snake), [LightCycles](https://github.com/jayrdeaton/6502-LightCycles)), playable in the browser at [games.infinitetoken.com](https://games.infinitetoken.com/#6502).
