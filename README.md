@@ -29,7 +29,7 @@ The code is private, but I'm happy to walk through the architecture.
 - **CashierFu-Utility:** CashierFu's React Native / Expo companion app: shop staff turn products into trackable units, move and audit stock across containers, photograph units for the storefront, and print labels on Zebra Bluetooth printers through native modules. The same codebase also builds against MediaEncyclopedia's API, each backend from its own EAS profile
 
 ### `@tastic`: React Native game engine + games
-Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, cards, profiles, achievements, split-screen pass-and-play) that power my Expo games. BoxHockey and Swirlio are the first on the App Store, with more games and Google Play on the way. Play the web versions at [games.infinitetoken.com](https://games.infinitetoken.com).
+Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, cards, profiles, achievements, split-screen pass-and-play, and the app shell around them) that power my Expo games. BoxHockey and Swirlio are the first on the App Store, with more games and Google Play on the way. Play the web versions at [games.infinitetoken.com](https://games.infinitetoken.com).
 - [React-Native-Game-Core](https://github.com/jayrdeaton/React-Native-Game-Core) (`@tastic/core`): frame-rate-independent game loop, vector math, orientation handling, background pause
 - [BoxHockey](https://github.com/jayrdeaton/BoxHockey) ([play](https://games.infinitetoken.com/boxhockey/), [App Store](https://apps.apple.com/app/id6824717751)): turn-based tabletop hockey with flick, slingshot, and push shots; reaction-race face-offs; and a CPU that picks shots by simulating them through the physics engine
 - [Solitaire](https://github.com/jayrdeaton/Solitaire) ([play](https://games.infinitetoken.com/solitaire/)): ad-free, offline suite of 11 solitaire games for iOS, Android, and web on a shared TypeScript card engine
@@ -86,6 +86,7 @@ Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, car
 | [`@tastic/profile`](https://github.com/jayrdeaton/React-Native-Game-Profile) | Per-seat player profiles with picker and roster screens |
 | [`@tastic/achievements`](https://github.com/jayrdeaton/React-Native-Game-Achievements) | Headless achievement and stats engine: tiers, per-profile unlocks, streaks |
 | [`@tastic/edge-guard`](https://github.com/jayrdeaton/React-Native-Edge-Guard) | Config plugin and hook that keep iOS edge swipes from firing over game controls |
+| [`@tastic/shell`](https://github.com/jayrdeaton/React-Native-Game-Shell) | The app around a pack of games: Home, loadouts, stats, profiles, settings, and one persisted Redux store, driven by a single pack definition |
 
 **Node.js / CLI**
 
