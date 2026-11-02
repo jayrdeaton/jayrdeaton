@@ -16,7 +16,7 @@ Full-stack engineer and co-founder at [Infinite Token](https://github.com/infini
 - Integrated Shopify, eBay, Google, AWS, and POS hardware into one system
 - Migrated hundreds of thousands of records across databases with zero data loss
 - Led the move to TypeScript, plus Jest testing and org-wide linting standards
-- Currently building [MediaEncyclopedia](https://mediaencyclopedia.com), a graded collectible-media storefront on Next.js and Supabase, with AI product enrichment on Gemini and Claude
+- Built and launched [Lumber](https://lumber.infinitetoken.com), an end-to-end encrypted logging service on the App Store for iPhone, iPad, and Mac: a Node SDK, Express and WebSocket servers on Supabase, and a CLI that decrypts logs for AI agents over MCP
 
 ---
 
@@ -24,11 +24,9 @@ Full-stack engineer and co-founder at [Infinite Token](https://github.com/infini
 
 ### Private projects
 The code is private, but I'm happy to walk through the architecture.
-- **[MediaEncyclopedia](https://mediaencyclopedia.com):** storefront for collectible Blu-ray, 4K, DVD, and games, with every unit graded and photographed. Next.js and Supabase, an in-house grading and cataloging tool, eBay-based pricing, AI enrichment routed between Gemini and Claude, and Stripe checkout
-- **MediaEncyclopedia-Utility:** MediaEncyclopedia's React Native / Expo companion app: staff turn products into trackable units, move and audit stock across containers, photograph units for the storefront, and print labels on Zebra Bluetooth printers through native modules
 - **[Lumber](https://lumber.infinitetoken.com)** ([App Store](https://apps.apple.com/app/id6767543372)): end-to-end encrypted cloud logging for iPhone, iPad, and Mac. A Node SDK encrypts each log with AES-256-GCM before it leaves the server, so the Express API, socket.io server, and workers on PostgreSQL (Supabase) only ever hold ciphertext. Each app key is wrapped per user with X25519, and new devices and teammates are confirmed with short codes over CPace. Clients: an Expo app, its Electron build for the Mac App Store, and a CLI that hands decrypted logs to AI agents over MCP
 - **CashierFu:** point-of-sale for small retailers: a Nuxt web app, native iOS and macOS apps in Swift, a WebSocket server, and an Express API with sales and inventory analytics. Each shop connects its own Stripe account to take cards on Stripe Terminal readers
-- **CashierFu-Utility:** CashierFu's companion app for shop staff, the same React Native codebase as MediaEncyclopedia-Utility built against CashierFu's own API from its own EAS profile
+- **CashierFu-Utility:** CashierFu's React Native / Expo companion app: shop staff turn products into trackable units, move and audit stock across containers, photograph units for the storefront, and print labels on Zebra Bluetooth printers through native modules. The same codebase also builds against MediaEncyclopedia's API, each backend from its own EAS profile
 
 ### `@tastic`: React Native game engine + games
 Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, cards, profiles, achievements, split-screen pass-and-play) that power my Expo games. BoxHockey and Swirlio are the first on the App Store, with more games and Google Play on the way. Play the web versions at [games.infinitetoken.com](https://games.infinitetoken.com).
