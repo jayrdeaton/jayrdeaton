@@ -16,7 +16,7 @@ Full-stack engineer and co-founder at [Infinite Token](https://github.com/infini
 - Integrated Shopify, eBay, Google, AWS, and POS hardware into one system
 - Migrated hundreds of thousands of records across databases with zero data loss
 - Led the move to TypeScript, plus Jest testing and org-wide linting standards
-- Built and launched [Lumber](https://lumber.infinitetoken.com), an end-to-end encrypted logging service on the App Store for iPhone, iPad, and Mac: a Node SDK, Express and WebSocket servers on Supabase, and a CLI that decrypts logs for AI agents over MCP
+- Built and launched [Lumber](https://lumber.infinitetoken.com), an end-to-end encrypted logging service for iPhone, iPad, Mac, Windows, and Linux: a Node SDK, Express and WebSocket servers on Supabase, and a CLI that decrypts logs for AI agents over MCP
 
 ---
 
