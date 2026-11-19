@@ -39,11 +39,10 @@ Most of this code is private, but I'm happy to walk through the architecture.
 
 ### `@tastic`: React Native game engine + games
 Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, cards, profiles, achievements, split-screen pass-and-play, and the app shell around them) that power my Expo games. DuelTastic, PuckTastic (BoxHockey until 2.0) and Swirlio are the first on the App Store, with more games and Google Play on the way. Play the web versions at [games.infinitetoken.com](https://games.infinitetoken.com).
-- [React-Native-Game-Core](https://github.com/jayrdeaton/React-Native-Game-Core) (`@tastic/core`): frame-rate-independent game loop, vector math, orientation handling, background pause
 - [CardTastic](https://github.com/jayrdeaton/CardTastic) ([play](https://games.infinitetoken.com/cardtastic/)): ad-free, offline collection of 20 card games (11 solitaire, 9 for two to four players with CPU opponents) for iOS, Android, and web on a shared TypeScript card engine. Its solitaire rules are `@tastic/cardtastic-engine`, shared with the game server, which replays each daily leaderboard run to check it
 - [DuelTastic](https://github.com/jayrdeaton/DuelTastic) ([play](https://games.infinitetoken.com/dueltastic/), [App Store](https://apps.apple.com/app/id6834025841)): four duel games in one app (Trap, Turf, Tag and Snake) on the shared game shell, head to head on one phone or against flood-fill and distance-field CPUs
 - [Hangman](https://github.com/jayrdeaton/Hangman) ([play](https://games.infinitetoken.com/hangman/))
-- [HexFleet](https://games.infinitetoken.com/hexfleet/): turn-based starship battles on a hex grid, drawn in Skia, where every commander plans in secret and the whole turn plays out at once, against CPUs, by pass and play, or with friends online through an Express and Socket.IO game server. Its rules are `@tastic/hexfleet-engine`, so the app and the game server run exactly the same game
+- [HexFleet](https://games.infinitetoken.com/hexfleet/) ([play](https://games.infinitetoken.com/hexfleet/)): turn-based starship battles on a hex grid, drawn in Skia, where every commander plans in secret and the whole turn plays out at once, against CPUs, by pass and play, or with friends online through an Express and Socket.IO game server. Its rules are `@tastic/hexfleet-engine`, so the app and the game server run exactly the same game
 - [PuckTastic](https://github.com/jayrdeaton/PuckTastic) ([play](https://games.infinitetoken.com/pucktastic/), [App Store](https://apps.apple.com/app/id6824717751)): four tabletop puck games in one app (Box Hockey, Air Hockey, Paddles and Breaker) on one physics engine, with sub-stepped puck physics and CPUs that predict the puck or pick shots by simulating them
 - [Swirlio](https://github.com/jayrdeaton/Swirlio) ([play](https://swirlio.infinitetoken.com), [App Store](https://apps.apple.com/app/id6824430243)): kaleidoscope toy drawn in Skia with up to 12 mirrored copies, 150 colliding beads simulated on the UI thread, and a mic-driven audio-reactive mode
 
@@ -53,7 +52,7 @@ Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, car
 | [MapFolio](https://github.com/jayrdeaton/MapFolio) | [mapfolio.infinitetoken.com](https://mapfolio.infinitetoken.com) | Interactive map builder: pins, routes, captions, print-to-PDF, and share links that encode the whole map in the URL |
 | [TrimBox](https://github.com/jayrdeaton/TrimBox) | [trimbox.infinitetoken.com](https://trimbox.infinitetoken.com) | Gmail inbox cleaner: scans up to 10,000 messages, surfaces bulk senders, one-click unsubscribe and bulk archive |
 | [SnaPDF-Web](https://github.com/jayrdeaton/SnaPDF-Web) | [snapdf.infinitetoken.com](https://snapdf.infinitetoken.com) | Snap ChatGPT and Claude conversations to searchable PDF or text |
-| [Pixelated-Web](https://github.com/jayrdeaton/Pixelated-Web) | [pixelated.infinitetoken.com](https://pixelated.infinitetoken.com) | Browser-based image pixelation with palettes and dithering |
+| [Pixelated-Web](https://github.com/jayrdeaton/Pixelated-Web) | [pixelated.infinitetoken.com](https://pixelated.infinitetoken.com) | Browser-based image pixelation with palettes and dithering, plus sprite export for SNES, Genesis, NES, Game Boy, Commodore 64, and more, as ca65, C, or binary |
 | [GraPDF-Web](https://github.com/jayrdeaton/GraPDF-Web) | [grapdf.infinitetoken.com](https://grapdf.infinitetoken.com) | Scrape PDFs from a webpage and merge them into one booklet |
 
 ---
@@ -106,8 +105,9 @@ Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, car
 | [`cosmetic`](https://github.com/jayrdeaton/Cosmetic) | Chainable ANSI color and style library for terminals |
 | [`snapdf`](https://github.com/jayrdeaton/SnaPDF) | CLI + ESM/CJS package behind SnaPDF, handling virtual scrolling |
 | [`grapdf`](https://github.com/jayrdeaton/GraPDF) | CLI + ESM/CJS package behind GraPDF |
-| [`pixelated`](https://www.npmjs.com/package/pixelated) | CLI + library: 40+ retro palettes, 20+ block shapes, dithering, ANSI output |
-| [`reunite`](https://github.com/jayrdeaton/Reunite) · [`deplace`](https://github.com/jayrdeaton/Deplace) | Small macOS terminal utilities |
+| [`pixelated`](https://www.npmjs.com/package/pixelated) | CLI + library: 40+ retro palettes, 20+ block shapes, dithering, ANSI output, and sprite data for classic consoles and computers |
+| [`reunite`](https://github.com/jayrdeaton/Reunite) | Snaps app windows into a saved grid layout, per display, on macOS and Linux (X11) |
+| [`deplace`](https://github.com/jayrdeaton/Deplace) | Directory shortcuts for the terminal: jump to them, or open groups in new windows or tabs, on macOS, Linux, and Windows |
 
 ---
 
