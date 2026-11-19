@@ -10,21 +10,29 @@
 
 ## Professional work
 
-Full-stack engineer and co-founder at [Infinite Token](https://github.com/infinitetoken) since 2016. That code is private, so here's the summary:
+Full-stack engineer and co-founder at [Infinite Token](https://github.com/infinitetoken) since 2016. Most of that code is private, so here's the summary:
 
-- Core engineer on a 3-6 person team: 6 internal apps (React, React Native, Electron), a central Node/Express API, and databases serving 3 retail locations, 25 staff, and tens of thousands of customers
-- Integrated Shopify, eBay, Google, AWS, and POS hardware into one system
-- Migrated hundreds of thousands of records across databases with zero data loss
-- Led the move to TypeScript, plus Jest testing and org-wide linting standards
-- Built and launched [Lumber](https://lumber.infinitetoken.com), an end-to-end encrypted logging service for iPhone, iPad, Mac, Windows, and Linux: a Node SDK, Express and WebSocket servers on Supabase, and a CLI that decrypts logs for AI agents over MCP
+- Core engineer on a 3-6 person team building our commerce platform: 6 apps including POS, inventory, and data sync, plus a central API and databases serving 3 retail locations, 25 staff, and tens of thousands of customers
+- Solo-built and launched [Lumber](https://lumber.infinitetoken.com), an end-to-end encrypted logging service for iPhone, iPad, Mac, Windows, and Linux (Android coming), with SDKs for several languages and an MCP CLI for AI agents
+- Solo-built and launched [SlingScan](https://slingscan.infinitetoken.com), which turns an iPhone into a wireless barcode scanner for Mac, Windows, and Linux over local Wi-Fi with no server, built with Expo and Electron
+- Built RESTful APIs and auth in Node.js/Express, plus business apps in React, React Native, and Electron
+- Integrated Shopify, eBay, Google, AWS, and POS hardware and software into one system
+- Implemented Stripe payments for online and in-store sales, including Stripe Terminal card readers
+- Wrote native Swift modules connecting Bluetooth and Zebra label printers to React Native apps
+- Planned and ran schema and data migrations on live production databases with no downtime or data loss
+- Added camera-based barcode scanning for product lookup across internal tools
+- Automated product-data collection with web scraping, saving hundreds of hours of manual entry
+- Led the migration to TypeScript and introduced Jest unit testing and org-wide linting standards
+
+Before that, Operations Manager at Gameroom (2013-2016), a ~30-person buy-sell-trade retailer, where I built VBA automation that cut payroll processing from 4 hours to 20 minutes and eBay inventory tooling that saved ~20 hours a week and cut listing time ~75%.
 
 ---
 
 ## Featured
 
 ### Private projects
-The code is private, but I'm happy to walk through the architecture.
-- **[Lumber](https://lumber.infinitetoken.com)** ([App Store](https://apps.apple.com/app/id6767543372), [Microsoft Store](https://apps.microsoft.com/detail/9NCGDHB49MFR)): end-to-end encrypted cloud logging for iPhone, iPad, Mac, Windows, and Linux. A Node SDK encrypts each log with AES-256-GCM before it leaves the server, so the Express API, socket.io server, and workers on PostgreSQL (Supabase) only ever hold ciphertext. Each app key is wrapped per user with X25519, and new devices and teammates are confirmed with short codes over CPace. Clients: an Expo app, its Electron build for Mac, Windows, and Linux, and a CLI that hands decrypted logs to AI agents over MCP
+Most of this code is private, but I'm happy to walk through the architecture.
+- **[Lumber](https://lumber.infinitetoken.com)** ([App Store](https://apps.apple.com/app/id6767543372), [Microsoft Store](https://apps.microsoft.com/detail/9NCGDHB49MFR)): end-to-end encrypted cloud logging for iPhone, iPad, Mac, Windows, and Linux. SDKs for Node.js, Python, Go, PHP, and .NET encrypt each log with AES-256-GCM before it leaves the server, so the Express API, socket.io server, and workers on PostgreSQL (Supabase) only ever hold ciphertext. Each app key is wrapped per user with X25519, and new devices and teammates are confirmed with short codes over CPace. Clients: an Expo app, its Electron build for Mac, Windows, and Linux, and a CLI that hands decrypted logs to AI agents over MCP
 - **[SlingScan](https://slingscan.infinitetoken.com)** ([App Store](https://apps.apple.com/app/id6832661783), [Microsoft Store](https://apps.microsoft.com/detail/9NQJK4H1NQPL)): turns an iPhone into a wireless barcode scanner for a Mac, Windows PC or Linux computer. Scans go straight to the computer over the local network, each WebSocket frame sealed with AES-256-GCM under a key shared by scanning a pairing QR code, and an Electron app types them into the app in front like a USB scanner, through macOS's CGEvent API, Windows' SendInput, X11's XTest, or Wayland's RemoteDesktop portal. The iPhone app is Expo and React Native Paper, with an offline outbox and a StoreKit 2 one-time unlock
 - **CashierFu:** point-of-sale for small retailers: a Nuxt web app, native iOS and macOS apps in Swift, a WebSocket server, and an Express API with sales and inventory analytics. Each shop connects its own Stripe account to take cards on Stripe Terminal readers
 - **CashierFu-Utility:** CashierFu's React Native / Expo companion app: shop staff turn products into trackable units, move and audit stock across containers, photograph units for the storefront, and print labels on Zebra Bluetooth printers through native modules. The same codebase also builds against MediaEncyclopedia's API, each backend from its own EAS profile
@@ -56,21 +64,21 @@ Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, car
 
 | Package | Description |
 |---------|-------------|
-| [`@rific/updater`](https://github.com/jayrdeaton/Expo-Updater) | OTA update hook for Expo plus the build and update release CLI |
-| [`@rific/sync`](https://github.com/jayrdeaton/Expo-Sync) | SQLite sync engine for Expo: schema management, upserts, deletions, cursor tracking |
-| [`@rific/scanner`](https://github.com/jayrdeaton/React-Native-Scanner) | Camera barcode scanner with customizable overlays |
-| [`@rific/auto-paper`](https://github.com/jayrdeaton/React-Native-Auto-Paper) | Adaptive triadic theming for react-native-paper |
-| [`@rific/toaster`](https://github.com/jayrdeaton/React-Native-Toaster) | Animated toast notifications |
-| [`@rific/heatmap`](https://github.com/jayrdeaton/React-Native-Heatmap) | GitHub-style activity heatmap |
-| [`@rific/timer`](https://github.com/jayrdeaton/React-Native-Timer) | Animated timer ring |
-| [`@rific/resizable-input`](https://github.com/jayrdeaton/React-Native-Resizable-Input) | Resizable multiline input |
-| [`@rific/focus-chain`](https://github.com/jayrdeaton/React-Focus-Chain) | Auto-incrementing focus chain hook for form inputs |
-| [`@rific/feedback-press`](https://github.com/jayrdeaton/React-Native-Feedback-Press) | Haptic pressables |
-| [`@rific/scroll-view`](https://github.com/jayrdeaton/React-Native-Scroll-View) | ScrollView, FlatList, and SectionList with blurred floating headers and pull-to-search |
-| [`@rific/drawer`](https://github.com/jayrdeaton/React-Native-Drawer) | Spring-animated drawers and sheets that slide in from any screen edge |
-| [`@rific/gestures`](https://github.com/jayrdeaton/React-Native-Gestures) | Swipe-to-dismiss with flicks, and pinch-to-zoom about the fingers, measured in the view's own coordinates |
-| [`@rific/splash-gate`](https://github.com/jayrdeaton/Expo-Splash-Gate) | Holds the splash screen until named async conditions are ready |
 | [`@rific/core`](https://github.com/jayrdeaton/React-Native-Core) | Settings Context and Redux slice factories shared by the other packages |
+| [`@rific/auto-paper`](https://github.com/jayrdeaton/React-Native-Auto-Paper) | Adaptive triadic theming for react-native-paper |
+| [`@rific/drawer`](https://github.com/jayrdeaton/React-Native-Drawer) | Spring-animated drawers and sheets that slide in from any screen edge |
+| [`@rific/feedback-press`](https://github.com/jayrdeaton/React-Native-Feedback-Press) | Haptic pressables |
+| [`@rific/focus-chain`](https://github.com/jayrdeaton/React-Focus-Chain) | Auto-incrementing focus chain hook for form inputs |
+| [`@rific/gestures`](https://github.com/jayrdeaton/React-Native-Gestures) | Swipe-to-dismiss with flicks, and pinch-to-zoom about the fingers, measured in the view's own coordinates |
+| [`@rific/heatmap`](https://github.com/jayrdeaton/React-Native-Heatmap) | GitHub-style activity heatmap |
+| [`@rific/resizable-input`](https://github.com/jayrdeaton/React-Native-Resizable-Input) | Resizable multiline input |
+| [`@rific/scanner`](https://github.com/jayrdeaton/React-Native-Scanner) | Camera barcode scanner with customizable overlays |
+| [`@rific/scroll-view`](https://github.com/jayrdeaton/React-Native-Scroll-View) | ScrollView, FlatList, and SectionList with blurred floating headers and pull-to-search |
+| [`@rific/splash-gate`](https://github.com/jayrdeaton/Expo-Splash-Gate) | Holds the splash screen until named async conditions are ready |
+| [`@rific/sync`](https://github.com/jayrdeaton/Expo-Sync) | SQLite sync engine for Expo: schema management, upserts, deletions, cursor tracking |
+| [`@rific/timer`](https://github.com/jayrdeaton/React-Native-Timer) | Animated timer ring |
+| [`@rific/toaster`](https://github.com/jayrdeaton/React-Native-Toaster) | Animated toast notifications |
+| [`@rific/updater`](https://github.com/jayrdeaton/Expo-Updater) | OTA update hook for Expo plus the build and update release CLI |
 | [Expo-Starter](https://github.com/jayrdeaton/Expo-Starter) | Production-ready Expo starter with Redux, Paper theming, OTA updates, and `@rific` pre-wired |
 
 **`@tastic`: React Native game engine**
@@ -78,17 +86,17 @@ Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, car
 | Package | Description |
 |---------|-------------|
 | [`@tastic/core`](https://github.com/jayrdeaton/React-Native-Game-Core) | Vec2 math, frame-clamped game loop, orientation handling, background pause |
-| [`@tastic/physics`](https://github.com/jayrdeaton/React-Native-Game-Physics) | 2D arcade physics: circle and rect collisions, bounces, friction, gravity wells, springs |
-| [`@tastic/input`](https://github.com/jayrdeaton/React-Native-Game-Input) | Worklet-safe input: swipe and keyboard direction, drag aiming, flick velocity |
-| [`@tastic/hud`](https://github.com/jayrdeaton/React-Native-Hud) | Non-modal UI kit for local multiplayer: popovers, pickers, gauges, and dialogs per player zone |
-| [`@tastic/split-screen`](https://github.com/jayrdeaton/React-Native-Split-Screen) | Face-to-face or side-by-side two-player layouts based on how the device is held |
-| [`@tastic/grid`](https://github.com/jayrdeaton/React-Native-Game-Grid) | Grid math for tile games: bounds, cell/pixel conversion, adjacency, BFS reachability |
-| [`@tastic/sprites`](https://github.com/jayrdeaton/React-Native-Sprites) | Shared Skia and SVG effects: fireworks, gravity wells, pucks, rink markings |
-| [`@tastic/cards`](https://github.com/jayrdeaton/React-Native-Cards) | Playing-card rendering: faces, backs, court figures, suit pips |
-| [`@tastic/profile`](https://github.com/jayrdeaton/React-Native-Game-Profile) | Per-seat player profiles with picker and roster screens |
 | [`@tastic/achievements`](https://github.com/jayrdeaton/React-Native-Game-Achievements) | Headless achievement and stats engine: tiers, per-profile unlocks, streaks |
+| [`@tastic/cards`](https://github.com/jayrdeaton/React-Native-Cards) | Playing-card rendering: faces, backs, court figures, suit pips |
 | [`@tastic/edge-guard`](https://github.com/jayrdeaton/React-Native-Edge-Guard) | Config plugin and hook that keep iOS edge swipes from firing over game controls |
+| [`@tastic/grid`](https://github.com/jayrdeaton/React-Native-Game-Grid) | Grid math for tile games: bounds, cell/pixel conversion, adjacency, BFS reachability |
+| [`@tastic/hud`](https://github.com/jayrdeaton/React-Native-Hud) | Non-modal UI kit for local multiplayer: popovers, pickers, gauges, and dialogs per player zone |
+| [`@tastic/input`](https://github.com/jayrdeaton/React-Native-Game-Input) | Worklet-safe input: swipe and keyboard direction, drag aiming, flick velocity |
+| [`@tastic/physics`](https://github.com/jayrdeaton/React-Native-Game-Physics) | 2D arcade physics: circle and rect collisions, bounces, friction, gravity wells, springs |
+| [`@tastic/profile`](https://github.com/jayrdeaton/React-Native-Game-Profile) | Per-seat player profiles with picker and roster screens |
 | [`@tastic/shell`](https://github.com/jayrdeaton/React-Native-Game-Shell) | The app around a pack of games: Home, loadouts, stats, profiles, settings, and one persisted Redux store, driven by a single pack definition |
+| [`@tastic/split-screen`](https://github.com/jayrdeaton/React-Native-Split-Screen) | Face-to-face or side-by-side two-player layouts based on how the device is held |
+| [`@tastic/sprites`](https://github.com/jayrdeaton/React-Native-Sprites) | Shared Skia and SVG effects: fireworks, gravity wells, pucks, rink markings |
 
 **Node.js / CLI**
 
@@ -105,12 +113,11 @@ Modular game-engine packages (game loop, physics, input, HUD, sprites, grid, car
 
 ## Stack
 
-- **Languages:** TypeScript, JavaScript, Python, Swift, Ruby, HTML/CSS
-- **Frameworks:** React, React Native, Expo, Node.js/Express, Electron, Vue/Nuxt
-- **Data:** PostgreSQL, MongoDB, SQLite, Supabase, offline-first sync
-- **Platforms:** AWS, Docker, Vercel, Heroku, GitHub Actions, npm publishing
-- **Integrations:** REST, GraphQL, WebSocket, Bluetooth, Shopify, eBay, POS hardware, Google & Anthropic APIs
-- **Testing:** Jest, unit and integration
+- **Languages:** TypeScript, JavaScript, Swift, Python, SQL, HTML/CSS, VBA
+- **Frameworks:** React, Next.js, React Native, Expo, Node.js/Express, Electron, Vue/Nuxt
+- **Platforms:** iOS, Android, macOS, Windows, Linux, Expo EAS, Xcode
+- **Cloud & Data:** AWS (Lambda, S3, Elastic Beanstalk, ECR), Supabase, Firebase, PostgreSQL, MongoDB, Redis, SQLite, Docker, GitHub Actions, Vercel, Heroku
+- **Tools & Integrations:** Git, Jest, REST, GraphQL, WebSocket, Bluetooth, Shopify, eBay, Google APIs (Gmail, Gemini, Merchant Center, Ads), Stripe, POS hardware
 
 ---
 
