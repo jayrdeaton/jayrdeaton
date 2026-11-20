@@ -13,8 +13,8 @@
 Full-stack engineer and co-founder at [Infinite Token](https://github.com/infinitetoken) since 2016. Most of that code is private, so here's the summary:
 
 - Core engineer on a 3-6 person team building our commerce platform: 6 apps including POS, inventory, and data sync, plus a central API and databases serving 3 retail locations, 25 staff, and tens of thousands of customers
-- Solo-built and launched [Lumber](https://lumber.infinitetoken.com), an end-to-end encrypted logging service for iPhone, iPad, Android, Mac, Windows, and Linux, with SDKs for several languages and an MCP CLI for AI agents
-- Solo-built and launched [SlingScan](https://slingscan.infinitetoken.com), which turns an iPhone into a wireless barcode scanner for Mac, Windows, and Linux over local Wi-Fi with no server, built with Expo and Electron
+- Solo-built and launched [Lumber](https://lumber.infinitetoken.com), an end-to-end encrypted logging service with apps for iOS, Android, Mac, Windows, and Linux, SDKs for several languages, and an MCP CLI for AI agents
+- Solo-built and launched [SlingScan](https://slingscan.infinitetoken.com), which turns an iOS or Android device into a wireless barcode scanner for Mac, Windows, and Linux over local Wi-Fi with no server, built with Expo and Electron
 - Built RESTful APIs and auth in Node.js/Express, plus business apps in React, React Native, and Electron
 - Integrated Shopify, eBay, Google, AWS, and POS hardware and software into one system
 - Implemented Stripe payments for online and in-store sales, including Stripe Terminal card readers
